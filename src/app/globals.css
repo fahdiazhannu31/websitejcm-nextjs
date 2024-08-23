@@ -16,18 +16,67 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'DMSans';
+  src: url('/assets/fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('/assets/fonts/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('/assets/fonts/DMSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  font-family: 'DMSans', sans-serif !important;
+}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .bg__footer {
+    background-color: #e70400;
+  }
+  .bg__footer__two {
+    background-color: #851e21;
+  }
+  .title__menu {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .text__justify {
+    text-align: justify;
+  }
+  .red__jcm {
+    background-color: #e70400;
+  }
+  .text__red {
+    color: #e70400;
+    border-color: #e70400;
+  }
+  /* styles.css atau dalam tag <style> di komponen Anda */
+.custom-list {
+  list-style-type: disc; /* Menambahkan titik pada setiap item */
+  padding-left: 20px; /* Menambahkan indentasi jika diperlukan */
 }
+
+.custom-list li {
+  text-align: left;
+}
+
+
+}
+
